@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -52,7 +53,7 @@
                 </switch>
               </svg>
             </a>
-            <ul class="nav_desktop">
+            <ul class="nav_desktop hide_mobile">
               <!---->
               <li class="label">
                 <a href="/locate-charger/" class="label-name"
@@ -74,6 +75,9 @@
               </li>
               <!----><!---->
             </ul>
+            <div class="search-box">
+              <input type="text" name="search-box" id="" placeholder="SEARCH" />
+            </div>
           </div>
           <div class="header-content-right">
             <div class="right-nav-item">
@@ -154,7 +158,10 @@
         <section class="section-top">
           <div class="section-top-wrapper">
             <picture>
-              <source media="(min-width:650px)" srcset="" />
+              <source
+                media="(min-width:650px)"
+                srcset="img/main_img_tablet.png"
+              />
               <source
                 media="(min-width:465px)"
                 srcset="img/main_img_tablet.png"
@@ -615,6 +622,7 @@
         </div>
       </footer>
     </div>
+
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
