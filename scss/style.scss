@@ -230,24 +230,29 @@ a.logo-container {
 }
 main {
   position: relative;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     padding: 36px;
   }
 }
 .main-bg {
   background-color: #f5f5f5;
-  height: 25%;
+  height: 38%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+
+  @media (min-width: 1024px) {
+    height: 41%;
+  }
 }
 .section-top-wrapper {
   display: flex;
   position: relative;
   width: 100%;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  margin-top: 80px;
+  @media (min-width: 768px) {
     margin-top: 81px;
     img {
       border-radius: 10px;
@@ -262,12 +267,18 @@ main {
   position: absolute;
   z-index: 1;
   padding: 0 24px;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     left: 100px;
     max-width: 460px;
   }
+  @media (min-width: 1024px) {
+    top: 44%;
+  }
   .detail {
     color: #fefefe;
+    @media (min-width: 1024px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -280,6 +291,9 @@ main {
     .hide_br {
       display: none;
     }
+  }
+  @media (min-width: 1024px) {
+    font-size: 48px;
   }
 
   span {
@@ -342,7 +356,7 @@ main {
     rgba(0, 0, 0, 0.8) 71.78%,
     rgba(0, 0, 0, 0.9)
   );
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     border-radius: 10px;
   }
 }
@@ -358,6 +372,10 @@ main {
     margin: 60px 0 0 0;
     padding: 60px 100px 80px 100px;
   }
+  @media (min-width: 1024px) {
+    margin: 0;
+    padding: 60px 100px 12px 100px;
+  }
 
   .section-middle-header {
     font-size: 20px;
@@ -370,13 +388,18 @@ main {
       font-size: 24px;
       margin-left: 60px;
     }
+    @media (min-width: 1024px) {
+      font-size: 32px;
+      margin: 0 0 52px;
+      line-height: 36px;
+    }
   }
   img {
     border-radius: 4px;
   }
 }
 .middler-row {
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -396,10 +419,28 @@ a.header-text {
 .flex-column {
   width: 100%;
   margin-bottom: 40px;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     width: 30%;
     &:nth-child(2) {
       margin: 0 40px;
+    }
+  }
+  @media (min-width: 1080px) {
+    width: 30%;
+    margin-bottom: 10px;
+    &:nth-child(2) {
+      margin: 30px 40px 0;
+    }
+  }
+}
+
+.middler-row:last-child {
+  @media (min-width: 1080px) {
+    .flex-column {
+      margin: auto 0px;
+      &:nth-child(2) {
+        margin: 0 40px;
+      }
     }
   }
 }
@@ -424,10 +465,15 @@ a.header-text {
     margin: 20px 0;
     padding-top: 0;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     width: 25%;
     font-size: 16px;
     margin-top: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 29%;
+    margin-top: 80px;
   }
 }
 .no-img-header {
@@ -441,17 +487,30 @@ a.header-text {
     margin-bottom: 0;
     line-height: 24px;
   }
+  @media (min-width: 1080px) {
+    font-size: 32px;
+    margin-bottom: 0;
+    line-height: 36px;
+  }
 }
 .app-platform {
   a:last-child {
     margin-left: 10px;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
 
     a:last-child {
       margin-left: 0;
+    }
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+
+    a:last-child {
+      margin-left: 10px;
     }
   }
 }
@@ -491,7 +550,7 @@ a.header-text {
     line-height: 24px;
     letter-spacing: 0.05em;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     position: absolute;
     top: 50px;
     left: 100px;
@@ -512,6 +571,9 @@ a.header-text {
       font-size: 48px;
     }
   }
+  @media (min-width: 1080px) {
+    top: 100px;
+  }
 }
 
 footer {
@@ -523,19 +585,22 @@ footer {
 .footer-wrapper {
   padding: 32px;
   background-color: #011352;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     padding: 65px 32px 38px 32px;
+  }
+  @media (min-width: 1024px) {
+    padding: 60px 180px 0;
   }
 }
 .footer-content-up {
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     display: flex;
     margin-bottom: 50px;
   }
 }
 .footer-logo {
   margin-bottom: 30px;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     margin-right: 80px;
     margin-bottom: 0;
   }
@@ -549,14 +614,14 @@ footer {
   width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 }
 .footer-nav {
   color: #fff;
   margin: 0 16px 32px 0;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     padding: 0 16px;
   }
   ul {
@@ -608,6 +673,10 @@ footer {
   flex-wrap: wrap;
   @media (min-width: 768px) and (max-width: 1024px) {
     padding-bottom: 0;
+  }
+  @media (min-width: 1024px) {
+    margin: 94px 0 0 0;
+    padding-bottom: 53px;
   }
 }
 .bottom-links {
