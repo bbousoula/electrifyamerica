@@ -86,11 +86,44 @@
               </svg>
             </div>
             <div class="hamburger-wrapper">
-              <div class="hamburger-content">
+              <!--               <div class="hamburger-content">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-              </div>
+              </div> -->
+              <nav role="navigation">
+                <div class="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul class="menu">
+                    <a href="#"><li class="bolder">Home</li></a>
+                    <a href="#"><li>Locate a Charger</li></a>
+                    <a href="#"><li>How it works</li></a>
+                    <a href="#"><li>Pricing</li></a>
+                    <a href="#"><li>Mobile App</li></a>
+                    <a href="#"><li class="bolder">Home Products</li></a>
+                    <a href="#"><li class="bolder">Commercial Solutions</li></a>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </div>
         </div>
