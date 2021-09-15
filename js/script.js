@@ -1,12 +1,18 @@
 $(document).ready(function () {
-  $(".search").click(function () {
+  function search_hide() {
     $(".search-box").toggle();
-    $(".nav_desktop").toggle();
-
-    $(".nav_desktop").hide();
-
     if ($(window).width() > 1024) {
       $(".nav_desktop").toggle();
     }
+  }
+  $(".search").click(function () {
+    $(".close").toggle();
+    $(".search").toggle();
+    search_hide();
+  });
+  $(".close").click(function () {
+    $(".search").toggle();
+    $(".close").toggle();
+    search_hide();
   });
 });
